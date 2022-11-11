@@ -1,3 +1,5 @@
+# Written by Zhilin Ning
+
 #coding=utf-8
 
 ind_info=open("ind_list_HU.txt")

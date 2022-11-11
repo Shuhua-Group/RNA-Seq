@@ -1,3 +1,5 @@
+# Written by Zhilin Ning
+
 #coding=utf-8
 from math import log
 

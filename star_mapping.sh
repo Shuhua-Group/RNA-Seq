@@ -1,4 +1,5 @@
 #!/bin/bash
+# Written by Lei Tian
 
 # STAR mapping / RSEM quantification pipeline
 # usage: from an empty working directory, run

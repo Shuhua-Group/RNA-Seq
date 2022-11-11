@@ -1,4 +1,5 @@
 #!/bin/bash
+# Written by Lei Tian
 
 # RSEM quantification pipeline
 # usage: from an empty working directory, run

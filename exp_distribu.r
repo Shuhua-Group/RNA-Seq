@@ -1,3 +1,5 @@
+# Written by Zhilin Ning
+
 exp <- read.table("expr_merge.txt",head=TRUE)
 sample <- colnames(exp)
 gene <- exp[,1]

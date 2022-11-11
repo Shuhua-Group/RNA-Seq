@@ -1,3 +1,5 @@
+# Written by Yuan Yuan
+
 ## Load genotype data
 library(MatrixEQTL)
 

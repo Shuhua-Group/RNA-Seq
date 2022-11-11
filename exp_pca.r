@@ -1,3 +1,5 @@
+# Written by Zhilin Ning
+
 #exp <- read.table("expr_merge.txt",head=TRUE)
 exp <- read.table("expr_merge_unstrand.txt",head=TRUE)
 gene <- exp[,1]
