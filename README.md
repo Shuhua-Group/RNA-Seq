@@ -70,4 +70,4 @@ Rscript MatrixEQTL.r $geno $exp $cov $gene_loc $snploc $cis_res $trans_res
 The input are two-columns, TAB-separated, BED-format files
 ```shell
 python2 roadmap.enrich.py --cis ${cis_loci} --bg ${bg_loci} --out ${prefix}
-```s
+```
