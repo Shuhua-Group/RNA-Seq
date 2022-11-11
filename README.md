@@ -15,7 +15,7 @@ mkdir -p ${fq_dir}/trim
 cd ${fq_dir}/trim
 trim_galore -q 20 --trim1 --paired --fastqc ${fq_dir}/${sampleID}_R1.fastq.gz ${fq_dir}/${sampleID}_R2.fastq.gz
 ```
-### 3. Mapping with [STAR](https://github.com/alexdobin/STAR)
+### 3. Mapping with [STAR <https://github.com/alexdobin/STAR)
 #### Building the STAR index 
 ```shell
 fasta="$wd/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.fa"
@@ -30,7 +30,7 @@ mkdir -p $wd/mapping
 
 sh star_mapping.sh ${fq_dir}/trim/${sampleID}_R1.fastq.gz ${fq_dir}/trim/${sampleID}_R2.fastq.gz $wd/ref/$STARgenomeDir  ${num_thread} $wd/mapping
 ```
-### 4. Quantify expression level with [RSEM](https://github.com/deweylab/RSEM)
+### 4. Quantify expression level with [RSEM <https://github.com/deweylab/RSEM)
 #### Building the RSEM index
 ```shell
 rsem-prepare-reference $wd/ref/ref_ensemble/ $wd/ref/ref_RSEM/Homo_sapiens.GRCh37.75 --gtf $gtf -p 5
@@ -61,9 +61,9 @@ Rscript exp_peer.r
 
 ## Functional analysis
 ### 1. ASE related analysis
-Calling of ASE and aseQTL were applied with the Python package ["ASEkit"](https://pypi.org/project/ASEkit/) developed by our team.
+Calling of ASE and aseQTL were applied with the Python package ["ASEkit" <https://pypi.org/project/ASEkit/) developed by our team.
 ### 2. QTL analysis
-The format of input data is consistant with examples in R package ["MatrixeQTL"](http://bios.unc.edu/research/genomic_software/Matrix_eQTL/)
+The format of input data is consistant with examples in R package ["MatrixeQTL" <http://bios.unc.edu/research/genomic_software/Matrix_eQTL/)
 ```shell
 Rscript MatrixEQTL.r $geno $exp $cov $gene_loc $snploc $cis_res $trans_res
 ```
@@ -91,14 +91,14 @@ python gene_func.enrich.py ${candidate_genes} ${background_genes} ${out}
 
 ## Contribution 
 
-[Zhilin Ning](<ningzhilin@picb.ac.cn>)
+Zhilin Ning <ningzhilin@picb.ac.cn>
 
-[Xinjiang Tan](tanxinjiang2019@sibs.ac.cn) 
+Xinjiang Tan <tanxinjiang2019@sibs.ac.cn> 
 
-[Yuan Yuan](yuanner@picb.ac.cn)
+Yuan Yuan <yuanner@picb.ac.cn>
 
-[Ke Huang](huangke@shanghaitech.edu.cn) 
+Ke Huang <huangke@shanghaitech.edu.cn> 
 
-[Yuwen Pan](panyuwen@picb.ac.cn)
+Yuwen Pan <panyuwen@picb.ac.cn>
 
-[Lei Tian ](tianleivv@gmail.com) 
+Lei Tian  <tianleivv@gmail.com>
