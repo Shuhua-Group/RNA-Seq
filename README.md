@@ -41,7 +41,7 @@ sh RSEM.sh ${sampleID} $wd/mapping $wd/ref/ref_RSEM/Homo_sapiens.GRCh37.75 ${num
 ### 5. Merging and QC of the FPKM matrix
 #### Merging the RSEM results to FPKM matrix
 ```shell
-python /picb/humpopg-bigdata5/ningzhilin/RNA_Seq/exp_old/expr_merge.py
+python expr_merge.py
 ```
 #### FPKM QC
 ```shell
