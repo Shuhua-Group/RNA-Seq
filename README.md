@@ -91,7 +91,7 @@ python gene_func.enrich.py ${candidate_genes} ${background_genes} ${out}
 
 ## Contribution 
 
-[Zhilin Ning](ningzhilin@picb.ac.cn)
+[Zhilin Ning]<ningzhilin@picb.ac.cn>
 
 [Xinjiang Tan](tanxinjiang2019@sibs.ac.cn) 
 
